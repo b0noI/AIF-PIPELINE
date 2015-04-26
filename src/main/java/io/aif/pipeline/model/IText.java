@@ -12,7 +12,7 @@ public interface IText {
 
     public List<String> tokens();
 
-    public List<List<IWord.IWordPlaceholder>> sentances();
+    public List<List<IWord.IWordPlaceholder>> sentences();
 
     public Map<ISeparatorGroupsClassifier.Group, Set<Character>> separators();
 
