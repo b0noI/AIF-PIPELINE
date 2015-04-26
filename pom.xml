@@ -31,4 +31,12 @@
         </repository>
     </repositories>
 
+    <distributionManagement>
+        <repository>
+            <id>snapshots</id>
+            <name>libs-snapshot-local</name>
+            <url>http://artifactory.aif.io/artifactory/libs-snapshot-local</url>
+        </repository>
+    </distributionManagement>
+
 </project>
