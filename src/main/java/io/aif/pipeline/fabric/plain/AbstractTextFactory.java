@@ -14,14 +14,14 @@ import io.aif.language.word.dict.DictBuilder;
 import io.aif.language.word.dict.WordPlaceHolderMapper;
 import io.aif.pipeline.model.IText;
 
-import java.io.InputStream;
+import java.io.IOException;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-abstract class AbstractTextFabric implements ITextFabric {
+abstract class AbstractTextFactory implements ITextFactory {
 
     @Override
     public IText build() {

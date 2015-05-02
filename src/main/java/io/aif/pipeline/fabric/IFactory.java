@@ -1,7 +1,7 @@
 package io.aif.pipeline.fabric;
 
 
-public interface IFabric<T> {
+public interface IFactory<T> {
 
     public T build();
 
