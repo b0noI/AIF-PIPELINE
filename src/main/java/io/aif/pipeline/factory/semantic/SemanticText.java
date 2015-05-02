@@ -1,12 +1,9 @@
-package io.aif.pipeline.fabric.semantic;
+package io.aif.pipeline.factory.semantic;
 
 import io.aif.associations.model.IGraph;
-import io.aif.language.fact.IFact;
 import io.aif.language.fact.IFactQuery;
 import io.aif.language.word.IWord;
 import io.aif.pipeline.model.ISemanticText;
-
-import java.util.Set;
 
 
 class SemanticText implements ISemanticText {

@@ -1,4 +1,4 @@
-package io.aif.pipeline.fabric;
+package io.aif.pipeline.factory;
 
 
 public interface IFactory<T> {
