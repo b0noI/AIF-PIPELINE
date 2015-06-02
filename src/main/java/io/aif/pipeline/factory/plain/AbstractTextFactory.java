@@ -1,4 +1,4 @@
-package io.aif.pipeline.fabric.plain;
+package io.aif.pipeline.factory.plain;
 
 import io.aif.language.common.IDict;
 import io.aif.language.common.IDictBuilder;
@@ -14,7 +14,6 @@ import io.aif.language.word.dict.DictBuilder;
 import io.aif.language.word.dict.WordPlaceHolderMapper;
 import io.aif.pipeline.model.IText;
 
-import java.io.IOException;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;

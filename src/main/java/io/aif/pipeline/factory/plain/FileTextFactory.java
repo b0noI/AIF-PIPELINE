@@ -1,7 +1,7 @@
-package io.aif.pipeline.fabric.plain;
+package io.aif.pipeline.factory.plain;
 
 
-import io.aif.pipeline.fabric.semantic.ISemanticTextFactory;
+import io.aif.pipeline.factory.semantic.ISemanticTextFactory;
 import io.aif.pipeline.model.ISemanticText;
 import io.aif.pipeline.model.IText;
 

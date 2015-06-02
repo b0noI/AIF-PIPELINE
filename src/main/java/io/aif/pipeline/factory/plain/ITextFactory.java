@@ -1,6 +1,6 @@
-package io.aif.pipeline.fabric.plain;
+package io.aif.pipeline.factory.plain;
 
-import io.aif.pipeline.fabric.IFactory;
+import io.aif.pipeline.factory.IFactory;
 import io.aif.pipeline.model.IText;
 
 public interface ITextFactory extends IFactory<IText> {

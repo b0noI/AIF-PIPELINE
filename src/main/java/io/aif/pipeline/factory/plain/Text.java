@@ -1,4 +1,4 @@
-package io.aif.pipeline.fabric.plain;
+package io.aif.pipeline.factory.plain;
 
 
 import io.aif.language.sentence.separators.classificators.ISeparatorGroupsClassifier;

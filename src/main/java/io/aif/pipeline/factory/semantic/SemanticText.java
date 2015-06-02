@@ -1,8 +1,6 @@
-package io.aif.pipeline.fabric.semantic;
+package io.aif.pipeline.factory.semantic;
 
 import io.aif.associations.builder.AssociationGraph;
-import io.aif.graph.normal.IGraph;
-import io.aif.graph.simple.ISimpleGraph;
 import io.aif.language.fact.IFactQuery;
 import io.aif.language.word.IWord;
 import io.aif.pipeline.model.ISemanticText;
