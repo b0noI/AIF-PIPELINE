@@ -24,7 +24,7 @@ public class FileTextFactory extends AbstractTextFactory {
         final IText text = fileTextFactory.build();
         System.out.println("Building semanticText");
         final ISemanticText semanticText = ISemanticTextFactory.build(text);
-        semanticText.factQuery().allFacts().get().stream().forEach(System.out::println);
+        semanticText.factQuery().allFacts().stream().forEach(System.out::println);
 
     }
 
