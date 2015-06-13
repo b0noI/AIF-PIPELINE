@@ -4,6 +4,7 @@ package io.aif.pipeline.factory.semantic;
 import io.aif.language.fact.Factr;
 import io.aif.language.fact.IFactDefiner;
 import io.aif.language.fact.IFactQuery;
+import io.aif.language.ner.NERExtractor;
 import io.aif.language.semantic.SemanticGraphBuilder;
 import io.aif.language.word.IWord;
 import io.aif.pipeline.model.ISemanticText;
@@ -29,7 +30,7 @@ class SemanticTextFactory implements ISemanticTextFactory {
 
         final SemanticGraphBuilder semanticGraphBuilder = new SemanticGraphBuilder();
 
-        final Factr factr = new Factr(IFactDefiner.Type.SUPER_FACT.getInstance());
+        final Factr factr = new Factr(IFactDefiner.Type.SUPER_FACT.getInstance(), new NERExtractor());
         final IFactQuery factQuery = factr.run(text.sentences());
 
         return new SemanticText(semanticGraphBuilder.build(placeholders), factQuery);
