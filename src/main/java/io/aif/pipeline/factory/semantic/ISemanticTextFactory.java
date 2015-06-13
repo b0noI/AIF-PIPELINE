@@ -1,7 +1,7 @@
-package io.aif.pipeline.fabric.semantic;
+package io.aif.pipeline.factory.semantic;
 
 
-import io.aif.pipeline.fabric.IFactory;
+import io.aif.pipeline.factory.IFactory;
 import io.aif.pipeline.model.ISemanticText;
 import io.aif.pipeline.model.IText;
 

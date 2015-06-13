@@ -1,4 +1,4 @@
-package io.aif.pipeline.fabric.semantic;
+package io.aif.pipeline.factory.semantic;
 
 
 import io.aif.language.fact.Factr;

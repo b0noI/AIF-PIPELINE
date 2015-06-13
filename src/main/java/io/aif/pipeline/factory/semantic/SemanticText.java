@@ -1,27 +1,24 @@
-package io.aif.pipeline.fabric.semantic;
+package io.aif.pipeline.factory.semantic;
 
-import io.aif.associations.model.IGraph;
-import io.aif.language.fact.IFact;
+import io.aif.associations.builder.AssociationGraph;
 import io.aif.language.fact.IFactQuery;
 import io.aif.language.word.IWord;
 import io.aif.pipeline.model.ISemanticText;
 
-import java.util.Set;
-
 
 class SemanticText implements ISemanticText {
 
-    private final IGraph<IWord> graph;
+    private final AssociationGraph<IWord> graph;
 
     private final IFactQuery factQuery;
 
-    public SemanticText(final IGraph<IWord> graph, final IFactQuery factQuery) {
+    public SemanticText(final AssociationGraph<IWord> graph, final IFactQuery factQuery) {
         this.graph = graph;
         this.factQuery = factQuery;
     }
 
     @Override
-    public IGraph<IWord> wordsGraph() {
+    public AssociationGraph<IWord> wordsGraph() {
         return graph;
     }
 

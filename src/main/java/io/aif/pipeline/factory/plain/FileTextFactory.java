@@ -1,7 +1,7 @@
-package io.aif.pipeline.fabric.plain;
+package io.aif.pipeline.factory.plain;
 
 
-import io.aif.pipeline.fabric.semantic.ISemanticTextFactory;
+import io.aif.pipeline.factory.semantic.ISemanticTextFactory;
 import io.aif.pipeline.model.ISemanticText;
 import io.aif.pipeline.model.IText;
 
@@ -39,7 +39,7 @@ public class FileTextFactory extends AbstractTextFactory {
         final IText text = fileTextFactory.build();
         System.out.println("Building semanticText");
         final ISemanticText semanticText = ISemanticTextFactory.build(text);
-        semanticText.factQuery().allFacts().get().stream().forEach(System.out::println);
+        semanticText.factQuery().allFacts().stream().forEach(System.out::println);
 
     }
 
