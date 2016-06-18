@@ -1,17 +1,18 @@
 package io.aif.pipeline.factory.plain;
 
-
 import io.aif.pipeline.factory.semantic.ISemanticTextFactory;
 import io.aif.pipeline.model.ISemanticText;
 import io.aif.pipeline.model.IText;
+import org.apache.log4j.Logger;
 
 import java.io.*;
 import java.nio.charset.Charset;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.HashSet;
 
 public class FileTextFactory extends AbstractTextFactory {
+
+    private static final Logger logger = Logger.getLogger(FileTextFactory.class);
 
     private final Path path;
     private final Charset charset;
@@ -35,11 +36,11 @@ public class FileTextFactory extends AbstractTextFactory {
         } else {
             fileTextFactory = new FileTextFactory(path);
         }
-        System.out.println("Building TEXT");
+        logger.debug("Building TEXT");
         final IText text = fileTextFactory.build();
-        System.out.println("Building semanticText");
+        logger.debug("Building semanticText");
         final ISemanticText semanticText = ISemanticTextFactory.build(text);
-        semanticText.factQuery().allFacts().stream().forEach(System.out::println);
+        semanticText.factQuery().allFacts().stream().forEach(logger::debug);
 
     }
 
