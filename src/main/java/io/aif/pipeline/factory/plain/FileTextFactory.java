@@ -40,7 +40,7 @@ public class FileTextFactory extends AbstractTextFactory {
         final IText text = fileTextFactory.build();
         logger.debug("Building semanticText");
         final ISemanticText semanticText = ISemanticTextFactory.build(text);
-        semanticText.factQuery().allFacts().stream().forEach(logger::debug);
+        semanticText.factQuery().allFacts().stream().forEach(System.out ::println);
 
     }
 
